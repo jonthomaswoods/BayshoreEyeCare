@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Emergency Contact"
+             x:Class="bayshoreeyecare.Pages.EmergencyContact">
+    <ContentPage.Content>
+        <ScrollView>
+            <AbsoluteLayout>
+                <StackLayout Margin="15" x:Name="mainLayout"
+                    AbsoluteLayout.LayoutBounds="0,0,1,1"
+                 AbsoluteLayout.LayoutFlags="All">
+                    <Label Text="If you are having an emergency, please enter your name, phone number, and a short description."
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       TextColor="Black"/>
+                    <Label Text="A doctor will recieve your message and get back to you as soon as possible."
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       TextColor="Black"/>
+                    <BoxView BackgroundColor="#0c9162" HeightRequest="2"></BoxView>
+                    <Label Text="* Required"
+                       TextColor="DarkRed"
+                       FontSize="Small"
+                       Margin="0,0,0,10"/>
+                    <Label>
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Name" FontAttributes="Bold" FontSize="Medium" TextColor="Black"/>
+                                <Span Text=" *" FontSize="Medium" TextColor="DarkRed" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Entry x:Name="entName"
+                           MaxLength="250"
+                        Placeholder="Enter you name"
+                       PlaceholderColor="Gray"
+                      TextColor="Black"/>
+                    <Label>
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Phone Number" FontAttributes="Bold" FontSize="Medium" TextColor="Black"/>
+                                <Span Text=" *" FontSize="Medium" TextColor="DarkRed" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Entry x:Name="entPhone"
+                       MaxLength="15"
+                       Keyboard="Telephone"
+                       Placeholder="Enter your 10 digit phone number"
+                       PlaceholderColor="Gray"
+                       TextColor="Black"/>
+                    <Label Text="Description:"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       TextColor="Black"/>
+                    <Entry x:Name="entDesc"
+                       MaxLength="250"
+                       Placeholder="Enter a short description of your emergency"
+                       PlaceholderColor="Gray"
+                       TextColor="Black"/>
+                    <Button Text="Submit"
+                        x:Name="btnSubmit"
+                        Clicked="btnSubmit_Clicked"
+                        Style="{StaticResource styleBtnOutlined}"/>
+                </StackLayout>
+                <StackLayout
+                x:Name="aiLayout"
+                IsVisible="False"
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                BackgroundColor="Gray" Opacity="0.5">
+                    <ActivityIndicator x:Name="activity"  
+                           IsRunning="False"  
+                           IsEnabled="False"  
+                           IsVisible="False"  
+                           Color="DarkRed"  
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </AbsoluteLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

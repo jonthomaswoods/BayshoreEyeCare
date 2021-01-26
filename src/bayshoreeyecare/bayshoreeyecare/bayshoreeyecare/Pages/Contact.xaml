@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="bayshoreeyecare.Pages.Contact"
+             BackgroundColor="White"
+             Title="Clinic Information">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Optometrist"
+                   FontSize="Medium"
+                   FontAttributes="Bold"
+                       TextColor="Black"
+                       HorizontalTextAlignment="Center"/>
+                <Label Text="Dr. Kenneth W. Lawson"
+                   FontSize="Small"
+                   FontAttributes="Bold"
+                       TextColor="Black"
+                       HorizontalTextAlignment="Center"/>
+                <Label Text="Dr. Jamie S. Lawson"
+                   FontSize="Small"
+                   FontAttributes="Bold"
+                       TextColor="Black"
+                       HorizontalTextAlignment="Center"/>
+                <BoxView BackgroundColor="#0c9162" HeightRequest="2"></BoxView>
+                <Label Text="Office Hours"
+                   FontSize="Medium"
+                   FontAttributes="Bold"
+                       TextColor="Black"
+                       HorizontalTextAlignment="Center"/>
+                <StackLayout Margin="15" HorizontalOptions="Center" >
+                    <Label Text="" x:Name="lblDay1" FontSize="Small" FontAttributes="Bold" TextColor="Black"/>
+                    <Label Text="" x:Name="lblDay2" FontSize="Small" TextColor="Black"/>
+                    <Label Text="" x:Name="lblDay3" FontSize="Small" TextColor="Black"/>
+                    <Label Text="" x:Name="lblDay4" FontSize="Small" TextColor="Black"/>
+                    <Label Text="" x:Name="lblDay5" FontSize="Small" TextColor="Black"/>
+                    <Label Text="" x:Name="lblDay6" FontSize="Small" TextColor="Black"/>
+                    <Label Text="" x:Name="lblDay7" FontSize="Small" TextColor="Black"/>
+                </StackLayout>
+                <BoxView BackgroundColor="#0c9162" HeightRequest="2"></BoxView>
+
+                <Button 
+                    Margin="15,15,15,5"
+                    FontSize="Medium"
+                    x:Name="btnNumber"
+                    Clicked="btnNumber_Clicked"
+                    Style="{StaticResource styleBtnOutlined}"/>
+                <Button Text="Office Directions"
+                    x:Name="btnDirections"
+                    Clicked="btnDirections_Clicked"
+                        Margin="15,15,15,5"
+                    Style="{StaticResource styleBtnOutlined}"/>
+                <Button Text="Report Issue"
+                    x:Name="btnAppEmail"
+                    Clicked="btnAppEmail_Clicked"
+                    Margin="15,15,15,5"
+                    Style="{StaticResource styleBtnOutlined}"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

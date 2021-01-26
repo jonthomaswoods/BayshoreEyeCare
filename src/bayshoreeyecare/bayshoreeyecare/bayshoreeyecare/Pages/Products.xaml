@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="bayshoreeyecare.Pages.Products"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Products">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="15">
+                <Label Text="Products carried by Bayshore Eyecare"
+                           HorizontalOptions="CenterAndExpand"
+                           FontSize="Medium"
+                           FontAttributes="Bold"
+                       TextColor="Black"/>
+                <BoxView BackgroundColor="#0c9162" HeightRequest="2"></BoxView>
+                <Label Text="HydroEye® Powerful Dry Eye Relief" TextColor="Black" FontSize="Small"/>
+                <ImageButton Source="hydroeye.jpg"
+                         Margin="10,5,10,5"
+                         Clicked="btnHydroEye_Clicked"
+                         BackgroundColor="Transparent"
+                         BorderColor="Black"
+                         BorderWidth="2"/>
+                <Label Text="Blephadex Eyelid Wipes" TextColor="Black" FontSize="Small"/>
+                <ImageButton Source="blephadex.jpg"
+                         Margin="10,5,10,5"
+                         Clicked="btnBlephadex_Clicked"
+                         BackgroundColor="Transparent"
+                         BorderColor="Black"
+                         BorderWidth="2"/>
+                <Label Text="MacuHealth Eye Health Supplements" TextColor="Black" FontSize="Small"/>
+                <ImageButton Source="macuhealth.jpg"
+                         Margin="10,5,10,5"
+                         Clicked="btnMacuHealth_Clicked"
+                         BackgroundColor="Transparent"
+                         BorderColor="Black"
+                         BorderWidth="2"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Coupons and Rebates"
+             x:Class="bayshoreeyecare.Pages.CouponsandRebates">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="15">
+                <Label Text="Below are coupons and rebates on products sold by Bayshore Eye Care."
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="Medium"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+                <Label Text="Coupons"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="Medium"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   Margin="10,0,0,0"/>
+                <BoxView BackgroundColor="#0c9162" HeightRequest="2"></BoxView>
+                <Label Text="Coupons for Bausch and Lomb" TextColor="Black" FontSize="Small"/>
+                <ImageButton Source="bausch.jpg"
+                         Margin="10,5,10,5"
+                         Clicked="btnBauschLombRebates_Clicked"
+                         BackgroundColor="Transparent"
+                         BorderColor="Black"
+                         BorderWidth="2"/>
+                <Label Text="Coupons for Systane" TextColor="Black" FontSize="Small"/>
+                <ImageButton Source="systane.jpg"
+                         Margin="10,5,10,5"
+                         Clicked="btnSystane_Clicked"
+                         BackgroundColor="Transparent"
+                         BorderColor="Black"
+                         BorderWidth="2"/>
+                <Label Text="Rebates"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="Medium"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   Margin="10,0,0,0"/>
+                <BoxView BackgroundColor="#0c9162" HeightRequest="2"></BoxView>
+                <Label Text="Rebates for Cooper Vision" TextColor="Black" FontSize="Small"/>
+                <ImageButton Source="cooper.jpg"
+                         Margin="10,5,10,5"
+                         Clicked="btnCooperVision_Clicked"
+                         BackgroundColor="Transparent"
+                         BorderColor="Black"
+                         BorderWidth="2"/>
+                <Label Text="Rebates for Acuvue" TextColor="Black" FontSize="Small"/>
+                <ImageButton Source="acuvue.png"
+                         Margin="10,5,10,5"
+                         Clicked="btnMyACUVUE_Clicked"
+                         BackgroundColor="Transparent"
+                         BorderColor="Black"
+                         BorderWidth="2"/>
+                <Label Text="Rebates for Bausch and Lomb" TextColor="Black" FontSize="Small"/>
+                <ImageButton Source="bauschrewards.jpg"
+                         Margin="10,5,10,5"
+                         Clicked="btnBauschLombRebates_Clicked"
+                         BackgroundColor="Transparent"
+                         BorderColor="Black"
+                         BorderWidth="2"/>
+                <Label Text="Rebates for Alcon" TextColor="Black" FontSize="Small"/>
+                <ImageButton Source="alcon.jpg"
+                         Margin="10,5,10,5"
+                         Clicked="btnAlcon_Clicked"
+                         BackgroundColor="Transparent"
+                         BorderColor="Black"
+                         BorderWidth="2"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
