@@ -77,36 +77,51 @@ namespace bayshoreeyecare.Pages
 
                 if (current == NetworkAccess.Internet)
                 {
-                    MailMessage mail = new MailMessage();
-                    SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
-
-                    mail.From = new MailAddress("support@cruxresolutions.com");
-                    mail.To.Add("9414480886@vtext.com");
-                    mail.Subject = "Emergecy Contact";
-                    if (!string.IsNullOrEmpty(entDesc.Text))
+                    var numbers = Controllers.API.GetPhoneNumbers();
+                    if (numbers != "false" && !string.IsNullOrEmpty(numbers))
                     {
-                        mail.Body = "    Name: " + entName.Text + "    Phone: " + entPhone.Text + "    Description: " + entDesc.Text + "    Date: " + DateTime.Now.ToLongDateString();
+                        var number = numbers.Split('^').ToList();
+
+                        foreach (var num in number)
+                        {
+                            if (!string.IsNullOrEmpty(num))
+                            {
+                                MailMessage mail = new MailMessage();
+                                SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+
+                                mail.From = new MailAddress("support@cruxresolutions.com");
+                                mail.To.Add(num.ToString());
+                                mail.Subject = "Emergecy Contact";
+                                if (!string.IsNullOrEmpty(entDesc.Text))
+                                {
+                                    mail.Body = "    Name: " + entName.Text + "    Phone: " + entPhone.Text + "    Description: " + entDesc.Text + "    Date: " + DateTime.Now.ToLongDateString();
+                                }
+                                else
+                                {
+                                    mail.Body = "    Name: " + entName.Text + "    Phone: " + entPhone.Text + "    Date: " + DateTime.Now.ToLongDateString();
+
+                                }
+                                SmtpServer.Port = 587;
+                                SmtpServer.Host = "smtp.gmail.com";
+                                SmtpServer.EnableSsl = true;
+                                SmtpServer.UseDefaultCredentials = false;
+                                SmtpServer.Credentials = new System.Net.NetworkCredential("support@cruxresolutions.com", "CodeCode77");
+
+                                SmtpServer.Send(mail);
+                                mail.Dispose();
+                                SmtpServer.Dispose();
+                            }
+                        }
+                        aiLayout.IsVisible = false;
+                        activity.IsEnabled = false;
+                        activity.IsRunning = false;
+                        activity.IsVisible = false;
+                        await DisplayAlert("Success", "Text message sent to doctors, please be patient for a response.", "Okay");
                     }
                     else
                     {
-                        mail.Body = "    Name: " + entName.Text + "    Phone: " + entPhone.Text + "    Date: " + DateTime.Now.ToLongDateString();
-
+                        await DisplayAlert("Service Disabled", "This service is currently disabled. Please contact the office directly, or try again later.", "Okay");
                     }
-                    SmtpServer.Port = 587;
-                    SmtpServer.Host = "smtp.gmail.com";
-                    SmtpServer.EnableSsl = true;
-                    SmtpServer.UseDefaultCredentials = false;
-                    SmtpServer.Credentials = new System.Net.NetworkCredential("support@cruxresolutions.com", "CodeCode77");
-
-                    SmtpServer.Send(mail);
-                    mail.Dispose();
-                    SmtpServer.Dispose();
-
-                    aiLayout.IsVisible = false;
-                    activity.IsEnabled = false;
-                    activity.IsRunning = false;
-                    activity.IsVisible = false;
-                    await DisplayAlert("Success", "Text message sent to doctors, please be patient for a response.", "Okay");
 
                 }
                 else
