@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+             x:Class="bayshoreeyecare.Popup.ErrorContactPopup">
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation 
+            PositionIn="Center"
+            PositionOut="Center"
+            ScaleIn="1.2"
+            ScaleOut="0.8"
+            DurationIn="400"
+            DurationOut="300"
+            EasingIn="SinOut"
+            EasingOut="SinIn"
+            HasBackgroundAnimation="True"/>
+    </pages:PopupPage.Animation>
+    <Frame CornerRadius="10"
+           VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            BackgroundColor="White"
+            Padding="30, 30, 30, 30">
+        <StackLayout>
+            <Label Text="Enter your email address and the issue or concern. Once sent a member of the app team will contact you as soon as possible."/>
+            <Label Text="Your Email:" 
+                   FontAttributes="Bold"/>
+            <Entry x:Name="entUserEmail"
+                   Placeholder="Enter your email."
+                   PlaceholderColor="Gray"
+                   TextColor="Black"
+                    Margin="10,0,10,20"/>
+            <Label Text="Message:" 
+                   FontAttributes="Bold"/>
+            <Entry x:Name="entMessage"
+                   MaxLength="250"
+                   Placeholder="Enter the issue or concern you have."
+                   PlaceholderColor="Gray"
+                   TextColor="Black"
+                   Margin="10,0,10,20"/>
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center">
+                <Button Text="Send"
+                        x:Name="btnSend"
+                        Clicked="btnSend_Clicked"/>
+                <Button Text="Cancel"
+                        Clicked="OnCancel"/>
+            </StackLayout>
+            
+        </StackLayout>
+    </Frame>
+</pages:PopupPage>

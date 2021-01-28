@@ -9,27 +9,27 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Margin="15">
-                <Label Text="Products carried by Bayshore Eyecare"
+                <Label Text="Products carried by Bayshore Eyecare. Click on the image of the product to be redirected."
                            HorizontalOptions="CenterAndExpand"
                            FontSize="Medium"
                            FontAttributes="Bold"
                        TextColor="Black"/>
                 <BoxView BackgroundColor="#0c9162" HeightRequest="2"></BoxView>
-                <Label Text="HydroEye® Powerful Dry Eye Relief" TextColor="Black" FontSize="Small"/>
+                <Label Text="HydroEye® Powerful Dry Eye Relief" TextColor="Black" FontSize="Small" FontAttributes="Bold"/>
                 <ImageButton Source="hydroeye.jpg"
                          Margin="10,5,10,5"
                          Clicked="btnHydroEye_Clicked"
                          BackgroundColor="Transparent"
                          BorderColor="Black"
                          BorderWidth="2"/>
-                <Label Text="Blephadex Eyelid Wipes" TextColor="Black" FontSize="Small"/>
+                <Label Text="Blephadex Eyelid Wipes" TextColor="Black" FontSize="Small" FontAttributes="Bold"/>
                 <ImageButton Source="blephadex.jpg"
                          Margin="10,5,10,5"
                          Clicked="btnBlephadex_Clicked"
                          BackgroundColor="Transparent"
                          BorderColor="Black"
                          BorderWidth="2"/>
-                <Label Text="MacuHealth Eye Health Supplements" TextColor="Black" FontSize="Small"/>
+                <Label Text="MacuHealth Eye Health Supplements" TextColor="Black" FontSize="Small" FontAttributes="Bold"/>
                 <ImageButton Source="macuhealth.jpg"
                          Margin="10,5,10,5"
                          Clicked="btnMacuHealth_Clicked"

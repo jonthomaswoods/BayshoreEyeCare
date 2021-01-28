@@ -1,4 +1,6 @@
-﻿using System;
+﻿using bayshoreeyecare.Popup;
+using Rg.Plugins.Popup.Extensions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -223,8 +225,17 @@ namespace bayshoreeyecare.Pages
         private void btnAppEmail_Clicked(object sender, EventArgs e)
         {
             //open email addressed to crux resolutions
-            var address = "support@cruxresolutions.com";
-            Device.OpenUri(new Uri($"mailto:{address}"));
+            try
+            {
+                Navigation.PushPopupAsync(new ErrorContactPopup());
+                //var address = "support@cruxresolutions.com";
+                //Device.OpenUri(new Uri($"mailto:{address}"));
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("Error", "Please take a screenshot of the error and send an email to the App team on the 'Contact' page. The error:" + ex.Message.ToString(), "Cancel");
+            }
+            
         }
     }
 }
