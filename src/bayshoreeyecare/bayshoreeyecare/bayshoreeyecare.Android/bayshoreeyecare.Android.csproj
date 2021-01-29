@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -85,7 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\bayshoreeyecare\bayshoreeyecare.csproj">
-      <Project>{92EFF0A3-B388-4D52-AE81-A37758C9FC4C}</Project>
+      <Project>{E5825E17-E602-4C04-A037-FB20CB57CFD0}</Project>
       <Name>bayshoreeyecare</Name>
     </ProjectReference>
   </ItemGroup>

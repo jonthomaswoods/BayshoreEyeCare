@@ -61,6 +61,7 @@
     <MtouchArch>ARM64</MtouchArch>
     <CodesignKey>iPhone Developer</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -132,12 +133,15 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\bayshoreeyecare\bayshoreeyecare.csproj">
-      <Project>{92EFF0A3-B388-4D52-AE81-A37758C9FC4C}</Project>
+      <Project>{E5825E17-E602-4C04-A037-FB20CB57CFD0}</Project>
       <Name>bayshoreeyecare</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\acuvue.png" />
+    <BundleResource Include="Resources\facebook.png" />
+    <BundleResource Include="Resources\bayshorelogo.png" />
+    <BundleResource Include="Resources\web.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\alcon.jpg" />
