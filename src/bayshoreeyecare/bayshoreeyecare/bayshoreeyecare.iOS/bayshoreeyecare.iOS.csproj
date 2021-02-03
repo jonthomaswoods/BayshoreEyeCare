@@ -61,6 +61,7 @@
     <MtouchArch>ARM64</MtouchArch>
     <CodesignKey>iPhone Developer</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -71,6 +72,48 @@
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+<<<<<<< HEAD
+=======
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40-2.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120-1.png" />
+>>>>>>> 4b43f356dc985e4fc8fde026c95c5bc2e729b6c3
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -90,12 +133,15 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\bayshoreeyecare\bayshoreeyecare.csproj">
-      <Project>{92EFF0A3-B388-4D52-AE81-A37758C9FC4C}</Project>
+      <Project>{E5825E17-E602-4C04-A037-FB20CB57CFD0}</Project>
       <Name>bayshoreeyecare</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\acuvue.png" />
+    <BundleResource Include="Resources\facebook.png" />
+    <BundleResource Include="Resources\bayshorelogo.png" />
+    <BundleResource Include="Resources\web.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\alcon.jpg" />
