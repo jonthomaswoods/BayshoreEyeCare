@@ -86,6 +86,9 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
       <Visible>false</Visible>
     </ImageAsset>
@@ -95,7 +98,16 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
@@ -104,6 +116,7 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
+<<<<<<< HEAD
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png" />
@@ -114,6 +127,8 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80-1.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120-1.png" />
 >>>>>>> 4b43f356dc985e4fc8fde026c95c5bc2e729b6c3
+=======
+>>>>>>> parent of 4b43f35 (icons)
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
