@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              Title="Emergency Contact"
-             x:Class="bayshoreeyecare.Pages.EmergencyContact">
+             x:Class="bayshoreeyecare.Pages.EmergencyContact"
+             Visual="Material">
     <ContentPage.Content>
         <ScrollView>
             <AbsoluteLayout>

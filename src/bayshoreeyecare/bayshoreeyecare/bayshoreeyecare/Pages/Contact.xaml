@@ -6,7 +6,8 @@
              mc:Ignorable="d"
              x:Class="bayshoreeyecare.Pages.Contact"
              BackgroundColor="White"
-             Title="Clinic Information">
+             Title="Clinic Information"
+             Visual="Material">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>

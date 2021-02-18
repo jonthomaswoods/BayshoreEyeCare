@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              Title="Coupons and Rebates"
-             x:Class="bayshoreeyecare.Pages.CouponsandRebates">
+             x:Class="bayshoreeyecare.Pages.CouponsandRebates"
+             Visual="Material">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Margin="15">

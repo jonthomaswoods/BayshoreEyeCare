@@ -30,10 +30,9 @@ namespace bayshoreeyecare.Popup
                     MailMessage mail = new MailMessage();
                     SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
                     mail.From = new MailAddress("support@cruxresolutions.com");
-                    mail.CC.Add(useremail);
                     mail.To.Add("support@cruxresolutions.com");
                     mail.Subject = "Bayshore Eye Care User Error";
-                    mail.Body = message;
+                    mail.Body = useremail + ": " +  message;
                     SmtpServer.Port = 587;
                     SmtpServer.Host = "smtp.gmail.com";
                     SmtpServer.EnableSsl = true;

@@ -63,6 +63,9 @@
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="4.8.0.1451" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="Xamarin.Forms.Visual.Material">
+      <Version>4.8.0.1451</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -128,20 +131,21 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\macuhealth.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-hdpi\bayshore_icon.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\bayshoreicon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-mdpi\bayshore_icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\bayshoreicon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-xhdpi\bayshore_icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\bayshoreicon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-xxhdpi\bayshore_icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\bayshoreicon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-xxxhdpi\bayshore_icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\bayshoreicon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>
