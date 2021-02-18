@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="bayshoreeyecare.MainPage"
              BackgroundColor="{StaticResource colorPrimary}">
-    <ContentPage.Content>
+    <!--<ContentPage.Content>
         <Grid>
             <Image x:Name="SplashIcon"
                    HorizontalOptions="Center"
@@ -11,5 +11,5 @@
                    Source="">
             </Image>
         </Grid>
-    </ContentPage.Content>
+    </ContentPage.Content>-->
 </ContentPage>

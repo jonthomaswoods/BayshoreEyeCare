@@ -9,7 +9,7 @@ using Android.OS;
 
 namespace bayshoreeyecare.Droid
 {
-    [Activity(Label = "bayshoreeyecare", Icon = "@mipmap/bayshoreicon", Theme = "@style/MainTheme", MainLauncher = false, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation )]
+    [Activity(Label = "bayshoreeyecare", Icon = "@mipmap/ic_launcher", Theme = "@style/MainTheme", MainLauncher = false, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation )]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)

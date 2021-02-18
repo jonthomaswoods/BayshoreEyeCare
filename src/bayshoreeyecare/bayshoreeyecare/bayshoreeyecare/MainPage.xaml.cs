@@ -15,10 +15,10 @@ namespace bayshoreeyecare
         public MainPage()
         {
             InitializeComponent();
-            if (Device.RuntimePlatform == Device.Android)
-            {
-                SplashIcon.Source = "@drawable/bayshoresplash.png";
-            }
+            //if (Device.RuntimePlatform == Device.Android)
+            //{
+            //    SplashIcon.Source = "@drawable/bayshoresplash.png";
+            //}
 
             NavigationPage.SetHasNavigationBar(this, false);
         }
