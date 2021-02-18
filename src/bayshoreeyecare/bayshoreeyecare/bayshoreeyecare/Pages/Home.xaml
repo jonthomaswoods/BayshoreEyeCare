@@ -64,7 +64,7 @@
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
                         <ImageButton Source="facebook.png" Grid.Column="0" x:Name="btnFacebook" Clicked="btnFacebook_Clicked" HorizontalOptions="CenterAndExpand"/>
-                        <Label Text="Bayshore Facebook Page" Grid.Column="0" Grid.Row="1" HorizontalOptions="CenterAndExpand"/>
+                        <Label Text="Facebook Page" Grid.Column="0" Grid.Row="1" HorizontalOptions="CenterAndExpand"/>
                         <ImageButton Source="web.png" Grid.Column="1" BackgroundColor="White" x:Name="btnWeb" Clicked="btnWeb_Clicked" HorizontalOptions="CenterAndExpand"/>
                         <Label Text="Bayshore Website" Grid.Column="1" Grid.Row="1" HorizontalOptions="CenterAndExpand"/>
                     </Grid>
