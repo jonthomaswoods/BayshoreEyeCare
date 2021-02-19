@@ -53,13 +53,13 @@
                        Placeholder="Enter your 10 digit phone number"
                        PlaceholderColor="Gray"
                        TextColor="Black"/>
-                    <Label Text="Description:"
+                    <Label Text="Emergency Description:"
                        FontSize="Medium"
                        FontAttributes="Bold"
                        TextColor="Black"/>
                     <Entry x:Name="entDesc"
                        MaxLength="250"
-                       Placeholder="Enter a short description of your emergency"
+                       Placeholder="Enter a description"
                        PlaceholderColor="Gray"
                        TextColor="Black"/>
                     <Button Text="Submit"

@@ -10,7 +10,7 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Margin="15">
-                <Label Text="Products carried by Bayshore Eyecare. Click on the image of the product to be redirected."
+                <Label Text="Products carried by Bayshore Eye Care. Click on the image of the product to be redirected."
                            HorizontalOptions="CenterAndExpand"
                            FontSize="Medium"
                            FontAttributes="Bold"

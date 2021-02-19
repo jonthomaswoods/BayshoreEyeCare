@@ -26,11 +26,11 @@ namespace bayshoreeyecare.Pages
                 var hours = new List<string>();
                 hours.Add("Saturday  Closed");
                 hours.Add("Sunday  Closed");
-                hours.Add("Monday  8:30AM–5:30PM");
-                hours.Add("Tuesday  8:30AM–5:30PM");
-                hours.Add("Wednesday  8:30AM–5:30PM");
-                hours.Add("Thursday  8:30AM–5:30PM");
-                hours.Add("Friday  8:30AM–12PM");
+                hours.Add("Monday  8:30 AM–5:30 PM");
+                hours.Add("Tuesday  8:30 AM–5:30 PM");
+                hours.Add("Wednesday  8:30 AM–5:30 PM");
+                hours.Add("Thursday  8:30 AM–5:30 PM");
+                hours.Add("Friday  8:30 AM–12:00 PM");
 
                 var day = DateTime.Now.DayOfWeek;
 

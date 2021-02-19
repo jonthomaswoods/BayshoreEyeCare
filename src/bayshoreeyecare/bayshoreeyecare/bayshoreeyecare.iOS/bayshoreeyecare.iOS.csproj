@@ -104,13 +104,7 @@
     <BundleResource Include="Resources\web.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\alcon.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\bausch.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\bauschrewards.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\cooper.jpg" />
@@ -185,5 +179,17 @@
     <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\alcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bauschrewards.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Jamieheadshot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Kenheadshot.jpg" />
   </ItemGroup>
 </Project>
