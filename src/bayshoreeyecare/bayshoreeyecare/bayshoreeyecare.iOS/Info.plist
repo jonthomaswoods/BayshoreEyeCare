@@ -25,7 +25,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>Bayshore Eye Care</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.companyname.bayshoreeyecare</string>
+	<string>com.crux.bayshoreeyecare</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>UILaunchStoryboardName</key>
