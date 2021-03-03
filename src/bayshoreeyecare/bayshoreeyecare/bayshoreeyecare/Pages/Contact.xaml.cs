@@ -217,7 +217,7 @@ namespace bayshoreeyecare.Pages
             }
             catch (Exception ex)
             {
-                DisplayAlert("Error", "Please take a screenshot of the error and send an email to the App team on the 'Contact' page. The error:" + ex.Message.ToString(), "Cancel");
+                DisplayAlert("No Phone", "There is no phone dialer on this device.", "Cancel");
             }
 
         }

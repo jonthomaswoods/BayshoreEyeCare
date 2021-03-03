@@ -21,7 +21,7 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>8.0</string>
+	<string>14.3</string>
 	<key>CFBundleDisplayName</key>
 	<string>Bayshore Eye Care</string>
 	<key>CFBundleIdentifier</key>
