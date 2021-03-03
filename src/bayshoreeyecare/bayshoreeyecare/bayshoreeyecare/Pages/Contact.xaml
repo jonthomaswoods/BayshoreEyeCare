@@ -11,59 +11,72 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                <Label Text="Optometrists"
-                   FontSize="Medium"
-                   FontAttributes="Bold"
-                       TextColor="Black"
-                       HorizontalTextAlignment="Center"/>
-                <Grid Margin="5,5,5,5">
+                
+                <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="20*"/>
+                        <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="0.2*"/>
-                        <ColumnDefinition Width="0.2*"/>
-                    </Grid.ColumnDefinitions>
-                    <Image Source="Kenheadshot.jpg" Aspect="AspectFit" HeightRequest="100" Grid.Column="0" Grid.Row="0"/>
-                    <Label Text="Dr. Kenneth W. Lawson" FontSize="Large" LineBreakMode="WordWrap"  FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="1"/>
-                    <Image Source="Jamieheadshot.jpg" Aspect="AspectFit" HeightRequest="100" Grid.Column="1" Grid.Row="0"/>
-                    <Label Text="Dr. Jamie S. Lawson" FontSize="Large" LineBreakMode="WordWrap" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center" Grid.Column="1" Grid.Row="1"/>
-                    
-                </Grid>
-                <BoxView BackgroundColor="#0c9162" HeightRequest="2"></BoxView>
-                <Label Text="Office Hours"
+                    <StackLayout Grid.Row="0">
+                        <Label Text="Optometrists"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                       TextColor="Black"
+                       HorizontalTextAlignment="Center"
+                               Margin="5"/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <StackLayout Grid.Column="0">
+                                <Image Source="Kenheadshot.jpg" Aspect="AspectFit" HeightRequest="100" />
+                                <Label Text="Dr. Kenneth W. Lawson" FontSize="Medium" LineBreakMode="WordWrap" HorizontalOptions="CenterAndExpand"  FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center" />
+                            </StackLayout>
+                            <StackLayout Grid.Column="1">
+                                <Image Source="Jamieheadshot.jpg" Aspect="AspectFit" HeightRequest="100" />
+                                <Label Text="Dr. Jamie S. Lawson" FontSize="Medium" LineBreakMode="WordWrap" HorizontalOptions="CenterAndExpand"  FontAttributes="Bold" TextColor="Black" HorizontalTextAlignment="Center" />
+                            </StackLayout>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout Grid.Row="1"/>
+                    <StackLayout Grid.Row="2">
+                        <BoxView BackgroundColor="#0c9162" HeightRequest="2" ></BoxView>
+                        <Label Text="Office Hours"
                    FontSize="Medium"
                    FontAttributes="Bold"
                        TextColor="Black"
                        HorizontalTextAlignment="Center"/>
-                <StackLayout Margin="15" HorizontalOptions="Center" >
-                    <Label Text="" x:Name="lblDay1" FontSize="Small" FontAttributes="Bold" TextColor="Black"/>
-                    <Label Text="" x:Name="lblDay2" FontSize="Small" TextColor="Black"/>
-                    <Label Text="" x:Name="lblDay3" FontSize="Small" TextColor="Black"/>
-                    <Label Text="" x:Name="lblDay4" FontSize="Small" TextColor="Black"/>
-                    <Label Text="" x:Name="lblDay5" FontSize="Small" TextColor="Black"/>
-                    <Label Text="" x:Name="lblDay6" FontSize="Small" TextColor="Black"/>
-                    <Label Text="" x:Name="lblDay7" FontSize="Small" TextColor="Black"/>
-                </StackLayout>
-                <BoxView BackgroundColor="#0c9162" HeightRequest="2"></BoxView>
+                        <StackLayout Margin="15" HorizontalOptions="Center" >
+                            <Label Text="" x:Name="lblDay1" FontSize="Medium"  FontAttributes="Bold" TextColor="Black"/>
+                            <Label Text="" x:Name="lblDay2" FontSize="Small" TextColor="Black"/>
+                            <Label Text="" x:Name="lblDay3" FontSize="Small" TextColor="Black"/>
+                            <Label Text="" x:Name="lblDay4" FontSize="Small" TextColor="Black"/>
+                            <Label Text="" x:Name="lblDay5" FontSize="Small" TextColor="Black"/>
+                            <Label Text="" x:Name="lblDay6" FontSize="Small" TextColor="Black"/>
+                            <Label Text="" x:Name="lblDay7" FontSize="Small" TextColor="Black"/>
+                        </StackLayout>
+                        <BoxView BackgroundColor="#0c9162" HeightRequest="2"></BoxView>
 
-                <Button 
+                        <Button 
                     Margin="15,15,15,5"
                     FontSize="Medium"
                     x:Name="btnNumber"
                     Clicked="btnNumber_Clicked"
                     Style="{StaticResource styleBtnOutlined}"/>
-                <Button Text="Office Directions"
+                        <Button Text="Office Directions"
                     x:Name="btnDirections"
                     Clicked="btnDirections_Clicked"
                         Margin="15,15,15,5"
                     Style="{StaticResource styleBtnOutlined}"/>
-                <Button Text="Report Issue"
+                        <Button Text="Report Issue"
                     x:Name="btnAppEmail"
                     Clicked="btnAppEmail_Clicked"
                     Margin="15,15,15,5"
                     Style="{StaticResource styleBtnOutlined}"/>
+                    </StackLayout>
+                </Grid>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

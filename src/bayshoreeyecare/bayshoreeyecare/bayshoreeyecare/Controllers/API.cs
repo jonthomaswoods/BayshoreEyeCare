@@ -39,7 +39,7 @@ namespace bayshoreeyecare.Controllers
                     return update;
                 }
             }
-            catch (Exception ex)
+            catch
             {
                 return "false";
             }
